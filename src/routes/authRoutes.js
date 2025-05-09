@@ -21,7 +21,7 @@ export const authRoutes = (controller, middleware) => {
 
 	router.post(
 		"/login",
-		loginLimiter,
+		// loginLimiter,
 		body("email").isEmail(),
 		body("password").exists(),
 		controller.login
